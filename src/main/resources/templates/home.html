@@ -195,15 +195,15 @@
         <script type="text/javascript">
             // For opening the note modal
             function showNoteModal(note) {
-                $('#note-id').val(note?.noteid ? note.noteid : '');
-                $('#note-title').val(note?.notetitle ? note.notetitle : '');
-                $('#note-description').val(note?.notedescription ? note.notedescription : '');
+                $('#note-id').val(note?.noteId ? note.noteId : '');
+                $('#note-title').val(note?.noteTitle ? note.noteTitle : '');
+                $('#note-description').val(note?.noteDescription ? note.noteDescription : '');
                 $('#noteModal').modal('show');
             }
 
             // For opening the credentials modal
             function showCredentialModal(cred, decryptedPassword) {
-                $('#credential-id').val(cred?.credentialid ? cred.credentialid : '');
+                $('#credential-id').val(cred?.credentialId ? cred.credentialId : '');
                 $('#credential-url').val(cred?.url ? cred.url : '');
                 $('#credential-username').val(cred?.username ? cred.username : '');
                 $('#credential-password').val(cred?.password ? decryptedPassword : '');
